@@ -34,23 +34,19 @@ It combines:
 - 🌐 **Interactive frontend interface**
 - 📊 **Real-time prediction flow**
 
-This project reflects how **AI can solve real-world financial security problems** through practical deployment.
-
 ---
 
 # 🎯 Problem Statement
 
 Credit card fraud is one of the biggest threats in the modern digital payment ecosystem.  
-With the massive rise in online transactions, fraudulent activity has become more sophisticated and difficult to identify using traditional rule-based systems.
 
 ### ❗ The challenge:
-Fraudulent transactions are:
-- **rare**
-- **hard to detect**
-- often hidden inside a huge number of legitimate transactions
+- Fraud is **rare**
+- Hard to detect
+- Hidden among legitimate transactions
 
 ### ✅ The solution:
-This project uses **Machine Learning classification techniques** to analyze transaction patterns and predict whether a transaction is fraudulent.
+Using **Machine Learning classification models** to detect fraud patterns in real-time.
 
 ---
 
@@ -63,10 +59,10 @@ This project uses **Machine Learning classification techniques** to analyze tran
 | 📊 Data Preprocessing | Cleans and prepares transaction data |
 | 🤖 ML Model Training | Trains fraud classification model |
 | ⚡ FastAPI Backend | Serves fraud predictions via API |
-| 🌐 Frontend UI | Interactive interface for user input |
-| 📈 Real-Time Prediction | Predicts fraud instantly |
-| 🛡️ Imbalanced Data Handling | Tackles real-world fraud rarity |
-| 🧪 ML Workflow Notebook | Includes experimentation and analysis |
+| 🌐 Frontend UI | Interactive interface |
+| 📈 Real-Time Prediction | Instant fraud detection |
+| 🛡️ Imbalanced Data Handling | Handles rare fraud cases |
+| 🧪 ML Workflow Notebook | Full experimentation |
 
 </div>
 
@@ -84,39 +80,32 @@ This project uses **Machine Learning classification techniques** to analyze tran
 <tr>
 <td align="center" width="180">
 <img src="https://skillicons.dev/icons?i=python" width="55"/><br><br>
-<b>Python</b><br>
-Core programming language
+<b>Python</b>
 </td>
 <td align="center" width="180">
 <img src="https://skillicons.dev/icons?i=fastapi" width="55"/><br><br>
-<b>FastAPI</b><br>
-Backend API framework
+<b>FastAPI</b>
 </td>
 <td align="center" width="180">
 <img src="https://skillicons.dev/icons?i=js" width="55"/><br><br>
-<b>JavaScript</b><br>
-Frontend interaction
+<b>JavaScript</b>
 </td>
 <td align="center" width="180">
 <img src="https://skillicons.dev/icons?i=html" width="55"/><br><br>
-<b>HTML</b><br>
-Frontend structure
+<b>HTML</b>
 </td>
 <td align="center" width="180">
 <img src="https://skillicons.dev/icons?i=css" width="55"/><br><br>
-<b>CSS</b><br>
-Frontend styling
+<b>CSS</b>
 </td>
 </tr>
 </table>
 
-<br>
-
-### 📚 Data Science Libraries
-- **Pandas**
-- **NumPy**
-- **Scikit-learn**
-- **Jupyter Notebook**
+### 📚 Libraries
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Jupyter Notebook  
 
 ---
 
@@ -125,27 +114,8 @@ Frontend styling
 ```bash
 Credit_card_fraud_detect/
 │
-├── backend_api/              # FastAPI backend for fraud prediction
-├── fraud-frontend/           # Frontend interface for user interaction
-├── Untitled-1.ipynb          # ML model training & experimentation
-├── README.md                 # Project documentation
+├── backend_api/              # FastAPI backend
+├── fraud-frontend/           # Frontend UI
+├── Untitled-1.ipynb          # ML training notebook
+├── README.md
 └── .gitignore
-
-## 🧩 System Architecture (3D Flow)
-
-```mermaid
-flowchart LR
-    A[👤 User Input<br>Transaction Data] --> B[🌐 Frontend UI<br>HTML CSS JS]
-    B --> C[⚡ FastAPI Backend<br>API Server]
-    C --> D[🧠 ML Model<br>Trained Classifier]
-    D --> E[📊 Prediction Engine<br>Fraud / Legit]
-    E --> C
-    C --> B
-    B --> F[📈 Result Display<br>Fraud Status]
-
-    style A fill:#0f2027,color:#fff
-    style B fill:#203a43,color:#fff
-    style C fill:#2c5364,color:#fff
-    style D fill:#1abc9c,color:#000
-    style E fill:#16a085,color:#000
-    style F fill:#2980b9,color:#fff
